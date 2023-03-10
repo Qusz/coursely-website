@@ -25,6 +25,10 @@ $clr-text-inverted: $white;
 /**
 * Fonts
 */
+$font-path: "assets/fonts";
+$font-family-default: "Arial", "Helvetica", sans-serif;
+$font-family-inter: "Inter";
+$font-family: $font-family-inter, $font-family-default;
 
 
 
