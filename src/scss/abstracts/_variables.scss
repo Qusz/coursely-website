@@ -62,9 +62,12 @@ $font-weight-medium: 500;
 $font-weight-bold: 700;
 
 
+
 /**
 * Breakpoints 
 */
+$screen-mobile: '(max-width: 768px)';
+$screen-tablet: '(max-width: 1366px)';
 
 
 
