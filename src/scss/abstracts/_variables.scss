@@ -97,12 +97,14 @@ $gap-60: 60px;
 /**
 * Transitions and Animations
 */
-
+$default-transition-duration: .2s;
+$default-transiton-type: ease-in-out;
 
 
 /**
 * Borders
 */
+$border-default: rem(1px) solid $alto;
 
 
 
