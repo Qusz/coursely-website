@@ -10,49 +10,6 @@
     padding-block: rem($gap-20);
   }
 
-  &__logo {
-    font-size: rem($font-size-31);
-    line-height: rem($line-height-39);
-    font-weight: $font-weight-bold;
-
-    display: flex;
-    align-items: center;
-    gap: rem(4px);
-
-    color: $brightGray;
-    text-decoration: none;
-
-    &-icon {
-      position: relative;
-      
-      display: flex;
-      align-items: center;
-
-      &-img {
-        width: rem(16px);
-        height: rem(21px);
-
-        &:first-child {
-          position: absolute;
-          top: 50%;
-          left: -10px;
-
-          transform: translateY(-50%);
-
-          color: $tonysPink;
-        }
-
-        &:last-child {
-          color: $azureRadiance;
-        }
-      }
-    }
-
-    &-text {
-      margin: 0;
-    }
-  }
-
   &__caption {
     font-size: rem($font-size-15);
     line-height: rem($line-height-22);
