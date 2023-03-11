@@ -1,0 +1,14 @@
+.link {
+  color: $azureRadiance;
+  text-decoration: underline;
+
+  transition: opacity $default-transition-duration $default-transiton-type;
+
+  &:hover {
+    opacity: .8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
