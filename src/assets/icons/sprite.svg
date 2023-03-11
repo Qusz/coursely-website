@@ -1,3 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg">
+  
+  <symbol id="icon-triangle" width="17" height="23" viewBox="0 0 17 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.625 11.4615L0.295959 22.2535V0.669525L16.625 11.4615Z" fill="currentColor"/>
+  </symbol>
 
 </svg>
