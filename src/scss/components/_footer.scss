@@ -1,0 +1,50 @@
+.footer {
+  background-color: $alabaster;
+  
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    padding-block: rem($gap-60);
+
+    @media #{$screen-mobile} {
+      flex-direction: column;
+      gap: rem($gap-30);
+
+      padding-block: rem($gap-40);
+    }
+  }
+
+  &__info {
+    max-width: rem(400px);
+
+    color: $clr-text-pirmary;
+
+    &-body {
+      @include multiline-text-truncate(3);
+
+      font-size: rem($font-size-18);
+      line-height: rem($line-height-28);
+
+      margin-top: rem($gap-20);
+      margin-bottom: 0;
+    }
+
+    &-links {
+      font-size: rem($font-size-14);
+      line-height: rem($line-height-20);
+
+      margin-top: rem($gap-10);
+      margin-bottom: 0;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: rem(80px);
+
+    &-item {
+      max-width: rem(120px);
+    }
+  }
+}
