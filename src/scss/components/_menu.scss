@@ -1,0 +1,40 @@
+.menu {
+  font-size: rem($font-size-14);
+  line-height: rem($line-height-22);
+  
+  color: $clr-text-pirmary;
+
+  &__header {
+    margin: 0;
+
+    color: $silverChalice;
+    text-transform: uppercase;
+  }
+
+  &__items {
+    @include list-reset;
+
+    display: flex;
+    flex-direction: column;
+    gap: rem($gap-10);
+
+    margin-top: rem($gap-15);
+  }
+
+  &__item {
+    &-link {
+      transition: color $default-transition-duration $default-transiton-type;
+
+      color: $clr-text-pirmary;
+      text-decoration: none;
+
+      &:hover {
+        color: $azureRadiance;
+      }
+
+      &:active {
+        color: $clr-text-pirmary;
+      }
+    }
+  }
+}
