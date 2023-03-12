@@ -6,6 +6,7 @@
   background-color: $white;
   box-shadow: $box-shadow-primary;
 
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -22,6 +23,7 @@
   }
 
   &__title {
+    @include multiline-text-truncate(1);
     @include text-title;
 
     font-weight: $font-weight-regular;
@@ -51,6 +53,7 @@
   }
 
   &__caption {
+    @include multiline-text-truncate(3);
     @include text-m;
 
     margin-top: rem($gap-30);
