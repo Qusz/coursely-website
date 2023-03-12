@@ -1,0 +1,28 @@
+.review-card {
+  max-width: rem(355px);
+  padding: rem(32px);
+
+  background-color: $gallery;
+
+  &__rating {
+    display: flex;
+    gap: rem(5px);
+
+    &-icon {
+      $icon-size: 20px;
+
+      width: rem($icon-size);
+      height: rem($icon-size);
+
+      color: $tonysPink;
+    }
+  }
+
+  &__body {
+    @include multiline-text-truncate(8);
+    @include text-s;
+
+    margin-top: rem(26px);
+    margin-bottom: rem($gap-15);
+  }
+}
