@@ -1,0 +1,40 @@
+.testemonial {
+  max-width: rem(650px);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem($gap-30);
+
+    @media #{$screen-mobile} {
+      gap: rem($gap-20);
+    }
+  }
+
+  &__icon {
+    width: rem(51px);
+    height: rem(46px);
+
+    color: $white;
+  }
+
+  &__body {
+    @include text-l;
+
+    font-style: italic;
+
+    margin: 0;
+
+    color: $clr-text-inverted;
+    text-align: center;
+
+    @media #{$screen-mobile} {
+      @include text-m;
+    }
+
+    &-accent {
+      color: $tonysPink;
+    }
+  }
+}
