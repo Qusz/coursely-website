@@ -52,5 +52,9 @@
     @include text-m;
 
     margin: 0;
+
+    &--white {
+      color: $white;
+    }
   }
 }
