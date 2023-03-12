@@ -1,0 +1,54 @@
+.user-profile {
+  &--horizontal & {
+    &__wrapper {
+      flex-direction: row;
+      align-items: center;
+      gap: rem($gap-10);
+    }
+  }
+
+  &--small & {
+    &__pic {
+      $pic-size: 48px;
+
+      width: rem($pic-size);
+      height: rem($pic-size);
+    }
+
+    &__name {
+      @include text-s;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: rem($gap-10);
+  }
+
+  &__pic {
+    $pic-size: 100px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    width: rem($pic-size);
+    height: rem($pic-size);
+
+    border-radius: 100%;
+
+    &-img {
+      max-width: 100%;
+
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  &__name {
+    @include text-m;
+
+    margin: 0;
+  }
+}
