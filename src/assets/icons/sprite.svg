@@ -4,4 +4,15 @@
     <path d="M16.625 11.4615L0.295959 22.2535V0.669525L16.625 11.4615Z" fill="currentColor"/>
   </symbol>
 
+  <symbol id="icon-play" width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_31_1455)">
+      <path d="M11.4545 10.5L0 20.1995L5.96801e-07 0.800537L11.4545 10.5Z" fill="currentColor"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_31_1455">
+        <rect width="12" height="21" fill="white"/>
+      </clipPath>
+    </defs>
+  </symbol>
+
 </svg>
