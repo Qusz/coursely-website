@@ -24,3 +24,12 @@
 
   list-style: none;
 }
+
+@mixin multiline-text-truncate($lines) {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
