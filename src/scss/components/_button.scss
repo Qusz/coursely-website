@@ -1,0 +1,61 @@
+.button {
+  @include single-line-truncate;
+  @include text-m;
+
+  max-width: 100%;
+  padding: rem(8px) rem(32px);
+
+  cursor: pointer;
+  transition: opacity $default-transition-duration $default-transiton-type;
+
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    opacity: .8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &--pink {
+    color: $clr-text-inverted;
+    background-color: $tonysPink;
+  }
+
+  &--blue {
+    color: $clr-text-inverted;
+    background-color: $azureRadiance;
+  }
+
+  &--gray {
+    color: $boulder;
+    background-color: $gallery;
+  }
+
+  &--bold {
+    font-weight: $font-weight-bold;
+  }
+
+  &--small {
+    @include text-s;  
+
+    padding: rem(5px) rem($gap-20);
+  }
+
+  &--icon {
+    display: flex;
+    align-items: center;
+    gap: rem(5px);
+  }
+
+  &--icon & {
+    &__icon {
+      width: rem(12px);
+      height: rem(21px);
+
+      order: -1;
+    }
+  }
+}
