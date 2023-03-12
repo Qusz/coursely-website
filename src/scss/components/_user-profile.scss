@@ -30,8 +30,9 @@
     $pic-size: 100px;
 
     position: relative;
-
     overflow: hidden;
+
+    flex-shrink: 0;
 
     width: rem($pic-size);
     height: rem($pic-size);
@@ -47,6 +48,7 @@
   }
 
   &__name {
+    @include multiline-text-truncate(1);
     @include text-m;
 
     margin: 0;
