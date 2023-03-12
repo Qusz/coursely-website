@@ -1,0 +1,111 @@
+.content-card {
+  max-width: rem(500px);
+
+  color: $clr-text-pirmary;
+
+  &--big & {
+    &__title {
+      font-size: rem($font-size-49);
+      font-weight: $font-weight-regular;
+      line-height: rem($line-height-59);
+    }
+
+    &__body {
+      font-size: rem($font-size-20);
+      line-height: rem($line-height-28);
+
+      color: $clr-text-secondary;
+    }
+  }
+
+  &--icon {
+    max-width: rem(334px);
+  }
+
+  &--icon & {
+    &__title {
+      @include text-l;
+
+      font-weight: $font-weight-regular;
+    }
+
+    &__body {
+      @include text-m;
+
+      margin-top: rem($gap-10);
+    }
+  }
+
+  &--small {
+    max-width: rem(247px);
+  }
+
+  &--small & {
+    &__body {
+      font-size: rem($font-size-15);
+      line-height: rem($line-height-24);
+    }
+  }
+
+  &__icon {
+    $icon-size: 40px;
+
+    width: rem($icon-size);
+    height: rem($icon-size);
+
+    &--blue {
+      color: $azureRadiance;
+    }
+
+    &--light-blue {
+      color: $anakiwa;
+    }
+
+    &--pink {
+      color: $tonysPink;
+    }
+  }
+
+  &__title {
+    @include text-title;
+    @include multiline-text-truncate(4);
+
+    margin: 0;
+  }
+
+  &__body {
+    @include text-m;
+    @include multiline-text-truncate(5);
+
+    margin-top: rem($gap-20);
+    margin-bottom: 0;
+  }
+
+  &__price {
+    font-size: rem($font-size-31);
+    font-weight: $font-weight-bold;
+    line-height: rem($line-height-39);
+
+    display: flex;
+    align-items: center;
+    gap: rem(5px);
+
+    margin-top: rem($gap-15);
+
+    &-old {
+      font-size: rem($font-size-20);
+      font-weight: $font-weight-regular;
+      line-height: rem($line-height-22);
+
+      color: $boulder;
+      text-decoration: line-through;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: rem($gap-10);
+
+    margin-top: rem($gap-30);
+  }
+}
