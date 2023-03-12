@@ -1,0 +1,81 @@
+.order-card {
+  max-width: rem(430px);
+  padding: rem(48px) rem(48px) rem(32px) rem(48px);
+
+  color: $clr-text-secondary;
+  background-color: $white;
+  box-shadow: $box-shadow-primary;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__icon {
+    $icon-size: 40px;
+
+    width: rem($icon-size);
+    height: rem($icon-size);
+
+    color: $silverChalice;
+  }
+
+  &__title {
+    @include text-title;
+
+    font-weight: $font-weight-regular;
+
+    margin-top: rem($gap-10);
+    margin-bottom: 0;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: rem(8px);
+
+    margin-top: rem($gap-15);
+
+    &-new {
+      font-size: rem($font-size-31);
+      line-height: rem($line-height-39);
+
+      color: $azureRadiance;
+    }
+
+    &-old {
+      font-size: rem($font-size-20);
+      line-height: rem($line-height-22);
+    }
+  }
+
+  &__caption {
+    @include text-m;
+
+    margin-top: rem($gap-30);
+    margin-bottom: rem($gap-10);
+
+    text-align: center;
+  }
+
+  &__features {
+    @include list-reset;
+
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: rem($gap-10);
+
+    margin-top: rem($gap-50);
+  }
+
+  &__feature {
+    font-size: rem($font-size-18);
+    line-height: rem($line-height-24);
+
+    &::marker {
+      content: url("/src/assets/icons/checkmark.svg");
+    }
+  }
+}
