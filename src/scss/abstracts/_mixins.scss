@@ -25,6 +25,12 @@
   list-style: none;
 }
 
+@mixin single-line-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 @mixin multiline-text-truncate($lines) {
   text-overflow: ellipsis;
   overflow: hidden;
