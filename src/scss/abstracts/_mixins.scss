@@ -1,11 +1,11 @@
 @mixin text-s {
-  font-size: rem($font-size-18);
-  line-height: rem($line-height-28);
+  font-size: rem($font-size-16);
+  line-height: rem($line-height-24);
 }
 
 @mixin text-m {
-  font-size: rem($font-size-16);
-  line-height: rem($line-height-24);
+  font-size: rem($font-size-18);
+  line-height: rem($line-height-28);
 }
 
 @mixin text-l {
