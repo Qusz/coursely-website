@@ -1,9 +1,9 @@
-const activeClass = 'accordion--active';
-
 export default function() {
   const accordion = document.querySelectorAll('[data-accordion]'),
         header = document.querySelectorAll('[data-accordion-header]'),
         body = document.querySelectorAll('[data-accordion-body]');
+
+  const activeClass = 'accordion--active';
 
   header.forEach((item, index) => {
     item.addEventListener('click', () => {
