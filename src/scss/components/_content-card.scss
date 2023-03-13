@@ -8,6 +8,11 @@
       font-size: rem($font-size-49);
       font-weight: $font-weight-regular;
       line-height: rem($line-height-59);
+
+      @media #{$screen-mobile} {
+        font-size: rem($font-size-38);
+        line-height: rem($line-height-46);
+      }
     }
 
     &__body {
@@ -15,6 +20,11 @@
       line-height: rem($line-height-28);
 
       color: $clr-text-secondary;
+
+      @media #{$screen-mobile} {
+        font-size: rem($font-size-16);
+        line-height: rem($line-height-22);
+      }
     }
   }
 
@@ -107,5 +117,9 @@
     gap: rem($gap-10);
 
     margin-top: rem($gap-30);
+
+    @media #{$screen-mobile} {
+      flex-direction: column;
+    }
   }
 }
