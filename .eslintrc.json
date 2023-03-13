@@ -39,15 +39,18 @@
     "func-names": "off",
     "no-process-exit": "off",
     "object-shorthand": "off",
-    "class-methods-use-this": "off"
+    "class-methods-use-this": "off",
+    "node/no-missing-import": "off"
   },
-  "import/resolver": {
-    "eslint-import-resolver-custom-alias": {
-      "alias": {
-        "@": "./src",
-        "assets": "./src/assets"
-      },
-      "extensions": [".js", ".jsx"]
+  "settings": {
+    "import/resolver": {
+      "eslint-import-resolver-custom-alias": {
+        "alias": {
+          "@": "./src",
+          "assets": "./src/assets"
+        },
+        "extensions": [".js", ".jsx"]
+      }
     }
   }
 }
