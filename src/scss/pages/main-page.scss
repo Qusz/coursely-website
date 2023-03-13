@@ -1,0 +1,266 @@
+.main-page {
+  &__hero {
+    padding-bottom: rem(120px);
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media #{$screen-tablet} {
+        flex-direction: column;
+      }
+    }
+
+    &-img {
+      &-wrapper {
+        @media #{$screen-tablet} {
+          order: -1;
+        }
+      }
+    }
+  }
+
+  &__learn {
+    &-cards-view {
+      padding-block: rem($gap-95);
+
+      @media #{$screen-mobile} {
+        padding-block: rem($gap-50);
+      }
+    }
+
+    &-info {
+      padding-block: rem($gap-95);
+
+      &-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media #{$screen-tablet} {
+          flex-direction: column;
+        }
+
+        &:first-child {
+          padding-bottom: rem($gap-95);
+        }
+      }
+    }
+  }
+
+  &__numbers {
+    @include full-bleed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: rem(424px);
+    padding-inline: rem($container-horizontal-padding);
+    
+    background-color: $azureRadiance;
+
+    @media #{$screen-mobile} {
+      padding-block: rem($gap-30);
+    }
+
+    &-wrapper {
+      width: 100%;
+    }
+
+    &-title {
+      @include text-title;
+
+      margin: 0;
+
+      color: $clr-text-inverted;
+      text-align: center;
+    }
+
+    &-items {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: rem($gap-40);
+
+      // Container width
+      max-width: rem(calc($container-width + 2 * $container-horizontal-padding));
+      margin: rem($gap-50) auto 0 auto;
+
+      @media #{$screen-mobile} {
+        flex-direction: column;
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: rem($gap-30);
+
+      color: $clr-text-inverted;
+
+      &-value {
+        font-size: rem($font-size-80);
+        font-weight: $font-weight-bold;
+        line-height: rem($line-height-64);
+
+        margin: 0
+      }
+
+      &-caption {
+        @include text-m;
+
+        margin: 0;
+      }
+    }
+  }
+
+  &__curriculum {
+    display: flex;
+    justify-content: center;
+
+    &-wrapper {
+      padding-block: rem(100px);
+
+      @media #{$screen-mobile} {
+        padding-block: rem($gap-50);
+      } 
+    }
+
+    &-title {
+      @include text-title;
+      font-weight: $font-weight-bold;
+
+      margin: 0;
+
+      text-align: center;
+    }
+
+    &-items {
+      display: flex;
+      flex-direction: column;
+      gap: rem($gap-10);
+
+      margin-top: rem($gap-60);
+    }
+  }
+
+  &__result {
+    &-wrapper {
+      padding-block: rem($gap-95);
+    }
+
+    &-title {
+      @include text-title;
+      font-weight: $font-weight-bold;
+    }
+
+    &-cards-view {
+      margin-top: rem($gap-60); 
+    }
+  }
+
+  &__testemonial {
+    @include full-bleed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-inline: rem($container-horizontal-padding);
+
+    background-color: $chathamsBlue;
+
+    &-wrapper {
+      padding-block: rem($gap-95);
+    }
+  }
+
+  &__questions {
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding-block: rem(120px);
+    }
+
+    &-title {
+      @include text-title;
+      
+      font-weight: $font-weight-regular;
+      
+      margin: 0;
+
+      text-align: center;
+    }
+
+    &-items {
+      margin-top: rem($gap-40);
+    }
+  }
+
+  &__order {
+    @include full-bleed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: rem(1030px);
+    padding-inline: rem($container-horizontal-padding);
+
+    background-color: $tonysPink;
+
+    @media #{$screen-mobile} {
+      padding-block: rem($gap-30);
+    }
+
+    &-title {
+      @include text-title;
+      
+      font-weight: $font-weight-regular;
+
+      margin: 0;
+
+      color: $clr-text-inverted;
+      text-align: center;
+    }
+
+    &-cards {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: rem($gap-40);
+
+      margin-top: rem($gap-60);
+    }
+  }
+
+  &__reviews {
+    display: flex;
+    align-items: center;
+
+    &-wrapper {
+      padding-block: rem($gap-95);
+
+      @media #{$screen-mobile} {
+        padding-block: rem($gap-50);
+      } 
+    }
+
+    &-title {
+      @include text-title;
+
+      margin: 0;
+
+      text-align: center;
+    }
+
+    &-cards-view {
+      margin-top: rem($gap-50);
+    }
+  }
+}
