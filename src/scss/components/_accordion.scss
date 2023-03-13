@@ -73,6 +73,8 @@
   }
 
   &__icon {
+    flex-shrink: 0;
+
     width: rem(16px);
     height: rem(10px);
 
