@@ -218,6 +218,10 @@
       padding-block: rem($gap-30);
     }
 
+    &-wrapper {
+      padding-block: rem($gap-20);
+    }
+
     &-title {
       @include text-title;
       
@@ -232,6 +236,7 @@
     &-cards {
       display: flex;
       align-items: flex-start;
+      justify-content: center;
       flex-wrap: wrap;
       gap: rem($gap-40);
 
