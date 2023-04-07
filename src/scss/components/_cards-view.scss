@@ -23,9 +23,20 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: rem($itemGap);
+
+    @media #{$screen-tablet} {
+      justify-content: revert;
+    }
+
+    @media #{$screen-mobile} {
+      justify-content: center;
+    }
   }
 
   &__item {
+    display: flex;
+    justify-content: center;
+
     width: calc(percentage(1 / 3) - $itemGap);
 
     @media #{$screen-tablet} {
